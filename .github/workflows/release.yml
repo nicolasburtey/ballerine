@@ -3,7 +3,9 @@ name: Release
 on:
   push:
     branches:
+      - dev
       - main
+      - test
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
